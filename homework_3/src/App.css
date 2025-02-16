@@ -1,0 +1,22 @@
+/* src/App.css */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+.task-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.task-card.completed {
+    background-color: #f0f0f0;
+    color: #aaa;
+}
+  
+button {
+    margin-top: 10px;
+} 

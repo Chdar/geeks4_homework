@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.total {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  transition: transform 0.3s ease-in-out;
+}
+
+.total:hover {
+  transform: scale(1.1);
+}
+
+/* анимация, будет плавно обновляется при изменении данных */
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.total.updated {
+  animation: fadeIn 0.3s ease-in-out;
+}
